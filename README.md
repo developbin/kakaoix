@@ -6,25 +6,34 @@
    
     1-2. 프론트 엔드
  
-   - Vuejs(Vue-cli), bootstrapVue
+       - Vuejs(Vue-cli), bootstrapVue
    
- 1-3. DB : mariadb
+    1-3. DB : mariadb
 
- 1-4. 추가 설명 : 백엔드는 rest api 기반으로 구성을 하였고, 프론트엔드는 spa & csr 로 구성하였습니다.
+    1-4. 추가 설명 : 백엔드는 rest api 기반으로 구성을 하였고, 프론트엔드는 spa & csr 로 구성하였습니다.
 
 2. 테이블 설계
 
  2-1. DDL
  
  2-2. todoMaster (마스터 테이블)
+ 
 	CREATE TABLE `todomaster` (
+	
 		`todoId` INT(11) NOT NULL AUTO_INCREMENT,
+		
 		`name` VARCHAR(200) NOT NULL,
+		
 		`status` TINYINT(1) NULL DEFAULT 0,
+		
 		`addDt` DATETIME NOT NULL,
+		
 		`modifyDt` DATETIME NULL DEFAULT NULL,
+		
 		PRIMARY KEY (`todoId`)
+		
 	)
+	
 	COLLATE='utf8_general_ci'
 	ENGINE=InnoDB
 	AUTO_INCREMENT=56
