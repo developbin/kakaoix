@@ -19,7 +19,7 @@
     2-2. todoMaster (마스터 테이블)
  
 	CREATE TABLE `todomaster` (
-		`todoId` INT(11) NOT NULL AUTO_INCREMENT,
+		`todoId` `INT(11) NOT NULL AUTO_INCREMENT,`
 		`name` VARCHAR(200) NOT NULL,
 		`status` TINYINT(1) NULL DEFAULT 0,
 		`addDt` DATETIME NOT NULL,
