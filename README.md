@@ -1,10 +1,10 @@
 1. 기술 구성
 
- 1-1. 백엔드
+    1-1. 백엔드
  
-   - Spring boot, Gradle, Jpa
+       - Spring boot, Gradle, Jpa
    
- 1-2. 프론트 엔드
+    1-2. 프론트 엔드
  
    - Vuejs(Vue-cli), bootstrapVue
    
