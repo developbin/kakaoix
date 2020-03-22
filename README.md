@@ -8,7 +8,7 @@
  1-4. 추가 설명 : 백엔드는 rest api 기반으로 구성을 하였고, 프론트엔드는 spa & csr 로 구성하였습니다.
 
 2. 테이블 설계
- 2-1. DDL \r\n
+ 2-1. DDL
  2-2. todoMaster (마스터 테이블)
 	CREATE TABLE `todomaster` (
 		`todoId` INT(11) NOT NULL AUTO_INCREMENT,
