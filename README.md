@@ -14,36 +14,30 @@
 
 2. 테이블 설계
 
- 2-1. DDL
+    2-1. DDL
  
- 2-2. todoMaster (마스터 테이블)
+    2-2. todoMaster (마스터 테이블)
  
 	CREATE TABLE `todomaster` (
-	
 		`todoId` INT(11) NOT NULL AUTO_INCREMENT,
-		
 		`name` VARCHAR(200) NOT NULL,
-		
 		`status` TINYINT(1) NULL DEFAULT 0,
-		
 		`addDt` DATETIME NOT NULL,
-		
 		`modifyDt` DATETIME NULL DEFAULT NULL,
-		
 		PRIMARY KEY (`todoId`)
-		
 	)
-	
 	COLLATE='utf8_general_ci'
 	ENGINE=InnoDB
 	AUTO_INCREMENT=56
 	;
- 2-3. todoDetail (디테일 테이블)
-     CREATE TABLE `tododetail` (
-	`todoId` INT(11) NOT NULL,
-	`referTodoId` INT(11) NOT NULL,
-	PRIMARY KEY (`todoId`, `referTodoId`),
-	CONSTRAINT `FK_tododetail_todomaster` FOREIGN KEY (`todoId`) REFERENCES `todomaster` (`todoId`)
+ 
+    2-3. todoDetail (디테일 테이블)
+    
+        CREATE TABLE `tododetail` (
+		`todoId` INT(11) NOT NULL,
+		`referTodoId` INT(11) NOT NULL,
+		PRIMARY KEY (`todoId`, `referTodoId`),
+		CONSTRAINT `FK_tododetail_todomaster` FOREIGN KEY (`todoId`) REFERENCES `todomaster` (`todoId`)
 	)
 	COLLATE='utf8_general_ci'
 	ENGINE=InnoDB
