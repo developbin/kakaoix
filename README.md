@@ -1,8 +1,13 @@
 1. 기술 구성
+
  1-1. 백엔드
+ 
    - Spring boot, Gradle, Jpa
+   
  1-2. 프론트 엔드
+ 
    - Vuejs(Vue-cli), bootstrapVue
+   
  1-3. DB : mariadb
 
  1-4. 추가 설명 : 백엔드는 rest api 기반으로 구성을 하였고, 프론트엔드는 spa & csr 로 구성하였습니다.
