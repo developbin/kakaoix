@@ -33,15 +33,15 @@
  
     2-3. todoDetail (디테일 테이블)
     
-        CREATE TABLE `tododetail` (
-		`todoId` INT(11) NOT NULL,
-		`referTodoId` INT(11) NOT NULL,
-		PRIMARY KEY (`todoId`, `referTodoId`),
-		CONSTRAINT `FK_tododetail_todomaster` FOREIGN KEY (`todoId`) REFERENCES `todomaster` (`todoId`)
-	)
-	COLLATE='utf8_general_ci'
-	ENGINE=InnoDB
-	;
+        CREATE TABLE `tododetail` (    
+		`todoId` INT(11) NOT NULL,    
+		`referTodoId` INT(11) NOT NULL,    
+		PRIMARY KEY (`todoId`, `referTodoId`),    
+		CONSTRAINT `FK_tododetail_todomaster` FOREIGN KEY (`todoId`) REFERENCES `todomaster` (`todoId`)    
+	)    
+	COLLATE='utf8_general_ci'    
+	ENGINE=InnoDB    
+	;    
 	
 3. 기능 설명
 	- CRUD 기능 완료
