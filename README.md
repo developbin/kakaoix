@@ -49,14 +49,19 @@
 	- 엑셀 다운로드, 파일 업로드 기능 완료
 	
 4. 빌드 및 실행방법
-
- 	4-1. 개발 환경
+	4-1. 개발 환경 세팅
+	- NodeJs 를 미리 설치하여 주시기 바랍니다.
+ 	- todo zip을 다운로드하여 압축을 풉니다.
+	- 압축이 풀어진 todo를 개발툴을 사용하여 프로젝트를 open 합니다.
+	- open 후에 4-2, 4-3 참조하여 실행하여 주시기 바랍니다.
+	
+	4-2. 개발 환경 및 실행
  	- 스프링 부트 어플리케이션을 run 합니다.
 	- 디렉토리 frontend 접근하여 처음 기동하시는 경우 npm install을 진행해주시기 바랍니다.
 	- 디렉토리 frontend 접근하여 npm run dev 명령어를 치시면 개발계 localhost:8089 vue-cli 기동이 됩니다.
 	- localhost:8089 접속을 해주시면 됩니다.
    
- 	4-2. production 환경
+ 	4-3. production 환경 및 실행
 	- 디렉토리 frontend 접근하여 npm run build 명령어를 치시면 Spring boot resource/static/ path에 빌드가 됩니다.
 	- 스프링 부트 어플리케이션을 run 합니다.
 	- localhost:8080 접속을 해주시면 됩니다.
